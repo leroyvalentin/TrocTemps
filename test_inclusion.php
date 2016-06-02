@@ -11,7 +11,7 @@ include ('inclusion.php');
 $l_base=tt_connectionbase();
 
  
- tt_insert('machindeux','trucdeux',$l_base);
+ tt_insert('$nom','$prenom',$l_base);
 ?>
 
    
