@@ -1,14 +1,17 @@
 <?php 
-		include("inclusion de la base.php");
+		include("inclusion.php");
 	?>
 <html>
 <head>
+ <link rel="stylesheet" type="text/css" href="http://localhost/TrocTemps/tt_design.css">
 <title>incrits a troctemps</title>
 </head>
 <body>
 
+
+
 <?php
-connectionbase();
+tt_connectionbase();
 
 // lancement de la requete
 $sql = 'SELECT  nom, prenom FROM inscrit ';
@@ -19,11 +22,12 @@ $req = mysql_query($sql) or die('Erreur SQL !<br />'.$sql.'<br />'.mysql_error()
 // on va scanner tous les tuples un par un
 while ($data = mysql_fetch_array($req)) {
 	// on affiche les résultats
-	echo 'Nom : '.$data['nom'].'<br />';
-	echo 'prenom : '.$data['prenom'].'<br /><br />';
+	echo 'Nom , prenom: '.$data['nom'].'';
+	echo ' '.$data['prenom'].'<br />';
 }
 mysql_free_result ($req);
 mysql_close ();
+
 ?>
 </body>
 </html>
