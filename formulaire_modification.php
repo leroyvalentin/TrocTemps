@@ -15,7 +15,7 @@
   //requête SQL:
   $sql = "SELECT *
             FROM inscrit
-      WHERE num_inscrit =$num_inscrit ".$num_inscrit ;
+      WHERE num_inscrit ='21' ".$num_inscrit ;
  
   //exécution de la requête:
   $requete = mysql_query( $sql, $l_base ) ;
@@ -24,10 +24,10 @@
   if( $result = mysql_fetch_object( $requete ) )
   {
   ?>
-<form name="enregistrement" action="enregistre_la_modification.php" method="POST">
+<form name="enregistrement" action="enregistre_la_modification.php" method="get">
   <input type="hidden" name="num_inscrit" value="<?php echo($num_inscrit) ;?>">
   <table border="0" align="center" cellspacing="2" cellpadding="2">
-    <tr align="center">
+   <tr align="center">
       <td>nom</td>
       <td><input type="text" name="nom" value="<?php echo($result->nom) ;?>"></td>
     </tr>
@@ -37,7 +37,7 @@
     </tr>
     <tr align="center">
       <td>prefession</td>
-      <td><input type="text" name="profesion" value="<?php echo($result->profesion) ;?>"></td>
+      <td><input type="text" name="profession" value="<?php echo($result->profession) ;?>"></td>
     </tr>
     <tr align="center">
       <td>code postal</td>
@@ -68,6 +68,7 @@
     </tr>
   </table>
 </form>
+
 
 <?php  
   } echo $result;

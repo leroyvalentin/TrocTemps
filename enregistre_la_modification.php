@@ -19,19 +19,22 @@ $add_mail    = $_POST["add_mail"] ;
    
    $telephone = $_POST["telephone"] ;
 
+   $description =$_post["description"];
+
    $enregistrement  = $_POST["enregistrement"] ;
   //création de la requête SQL:
   $sql = "UPDATE inscrit
             SET nom         = '$nom', 
-	          prenom     = '$prenom',
-		  profession    = '$profession',
+            prenom     = '$prenom',
+      profession    = '$profession',
       nom_ville ='$nom_ville',
-		  cp           = '$cp',
+      cp           = '$cp',
       rue ='$rue',
       add_mail='$add_mail',
       telephone='$telephone',
+      description='$description'
 
-           WHERE num_inscrit ='21' " ;
+ WHERE num_inscrit ='21' " ;
  
   //exécution de la requête SQL:
   $requete = mysql_query($sql, $l_base) or die( mysql_error() ) ;

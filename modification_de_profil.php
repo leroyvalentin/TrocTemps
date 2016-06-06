@@ -8,7 +8,7 @@
  include ('inclusion.php');
  $l_base=tt_connectionbase();
 
- $num_inscrit="num_inscrit";
+ $num_inscrit='21';
     //requête SQL:
     $sql = "SELECT num_inscrit, nom, prenom,nom_ville
 	      FROM  inscrit
@@ -23,7 +23,7 @@
        echo(
            "<div align=\"center\">"
            .$result->nom." ".$result->prenom
-           ." ".$result->nom_ville." <a href=\"formulaire_modification.php?identifiant=$num_inscrit".$result->$num_inscrit."\">modifier</a></div>\n"
+           ." ".$result->nom_ville." <a href=\"formulaire_modification.php?num_inscrit=21".$result->$num_inscrit."\">modifier</a></div>\n"
        ) ;
     }
   ?>
