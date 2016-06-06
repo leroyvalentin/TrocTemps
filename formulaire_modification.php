@@ -10,12 +10,12 @@
  
   //récupération de la variable d'URL,
   //qui va nous permettre de savoir quel enregistrement modifier
-  $num_inscrit  = $_GET["identifiant"] ;
+  $num_inscrit  = $_GET["num_inscrit"] ;
 
   //requête SQL:
   $sql = "SELECT *
             FROM inscrit
-      WHERE num_inscrit ='21' ".$num_inscrit ;
+      WHERE num_inscrit = ".$num_inscrit ;
  
   //exécution de la requête:
   $requete = mysql_query( $sql, $l_base ) ;

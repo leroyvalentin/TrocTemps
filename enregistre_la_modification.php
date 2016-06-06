@@ -2,6 +2,8 @@
   //connection au serveur
  include ('inclusion.php');
  $l_base=tt_connectionbase();
+
+  
   
    $nom     = $_POST["nom"] ;
    
@@ -19,9 +21,10 @@ $add_mail    = $_POST["add_mail"] ;
    
    $telephone = $_POST["telephone"] ;
 
-   $description =$_post["description"];
+   $description =$_POST["description"];
 
-   $enregistrement  = $_POST["enregistrement"] ;
+   $num_inscrit  = $_GET["num_inscrit"] ;
+
   //création de la requête SQL:
   $sql = "UPDATE inscrit
             SET nom         = '$nom', 
@@ -34,7 +37,8 @@ $add_mail    = $_POST["add_mail"] ;
       telephone='$telephone',
       description='$description'
 
- WHERE num_inscrit ='21' " ;
+  WHERE num_inscrit = ".$num_inscrit ;
+  print($sql);
  
   //exécution de la requête SQL:
   $requete = mysql_query($sql, $l_base) or die( mysql_error() ) ;
