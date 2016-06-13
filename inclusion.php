@@ -6,11 +6,11 @@ function tt_connectionbase(){
     return $base;
 }
 
-function tt_insert($nom,$prenom,$profession,$sexe,$nom_ville,$cp,$rue,$add_mail,$telephone,$description,$base)
+function tt_insert($nom,$prenom,$profession,$sexe,$nom_ville,$cp,$rue,$add_mail,$telephone,$description,$pass,$base)
  {
   //création de la requête SQL:
-  $sql = "INSERT  INTO inscrit (nom, prenom,profession,sexe,nom_ville,cp,rue,add_mail,telephone,description)
-            VALUES ( '$nom', '$prenom','$profession','$sexe','$nom_ville','$cp','$rue','$add_mail','$telephone','$description') " ;
+  $sql = "INSERT  INTO inscrit (nom, prenom,profession,sexe,nom_ville,cp,rue,add_mail,telephone,pass,description)
+            VALUES ( '$nom', '$prenom','$profession','$sexe','$nom_ville','$cp','$rue','$add_mail','$telephone','$pass','$description') " ;
  
   //exécution de la requête SQL:
   $requete = mysql_query($sql, $base) or die( mysql_error() ) ;
@@ -27,3 +27,4 @@ function tt_insert($nom,$prenom,$profession,$sexe,$nom_ville,$cp,$rue,$add_mail,
     }
 
 ?>
+  

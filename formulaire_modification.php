@@ -1,12 +1,16 @@
 <html>
-  <head>
-    <title>modification de données en PHP :: partie2</title>
-  </head>
-<body>
-
+<head>
   <?php
+ require('controlle_connection.php');
+include("menu.php")
+    ?>
+<title>liste des profil modifiable </title>
+</head>
+<body>
+ <?php
  include ('inclusion.php');
  $l_base=tt_connectionbase();
+
  
   //récupération de la variable d'URL,
   //qui va nous permettre de savoir quel enregistrement modifier
@@ -62,6 +66,10 @@
     <tr align="center">
       <td>description</td>
       <td><input type="text" name="description" value="<?php echo($result->description) ;?>"></td>
+    </tr>
+      <tr align="center">
+      <td>mot de passe</td>
+      <td><input type="password" name="pass" value="<?php echo($result->pass) ;?>"></td>
     </tr>
     <tr align="center">
       <td colspan="2"><input type="submit" value="modifier"></td>

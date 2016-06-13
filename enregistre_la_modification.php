@@ -1,27 +1,32 @@
 <?php
   //connection au serveur
+  
+
+    
  include ('inclusion.php');
  $l_base=tt_connectionbase();
 
   
   
-   $nom     = $_POST["nom"] ;
+   $nom     = $_GET["nom"] ;
    
-   $prenom = $_POST["prenom"] ;
+   $prenom = $_GET["prenom"] ;
 
-   $profession=$_POST["profession"];
+   $profession=$_GET["profession"];
 
-   $nom_ville = $_POST["nom_ville"] ;
+   $nom_ville = $_GET["nom_ville"] ;
 
-$cp    = $_POST["cp"] ;
+$cp    = $_GET["cp"] ;
    
-   $rue = $_POST["rue"] ;
+   $rue = $_GET["rue"] ;
 
-$add_mail    = $_POST["add_mail"] ;
+$add_mail    = $_GET["add_mail"] ;
    
-   $telephone = $_POST["telephone"] ;
+   $telephone = $_GET["telephone"] ;
 
-   $description =$_POST["description"];
+ $description =$_GET["description"];
+
+ $pass =$_GET["pass"];
 
    $num_inscrit  = $_GET["num_inscrit"] ;
 
@@ -35,8 +40,8 @@ $add_mail    = $_POST["add_mail"] ;
       rue ='$rue',
       add_mail='$add_mail',
       telephone='$telephone',
-      description='$description'
-
+    description='$description',
+       pass ='$pass'
   WHERE num_inscrit = ".$num_inscrit ;
   print($sql);
  

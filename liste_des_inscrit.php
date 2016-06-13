@@ -1,7 +1,12 @@
 
 <html>
 <head>
- <link rel="stylesheet" type="text/css" href="http://localhost/TrocTemps/tt_design.css">
+  <?php
+       
+
+  require('controlle_connection.php');
+include("menu.php")
+    ?>
 <title>liste des profil modifiable </title>
 </head>
 <body>

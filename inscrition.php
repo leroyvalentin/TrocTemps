@@ -1,6 +1,9 @@
 <html>
 <head>
- <link rel="stylesheet" type="text/css" href="http://localhost/TrocTemps/tt_design.css">
+  
+ 
+     <link rel="stylesheet" type="text/css" href="http://localhost/TrocTemps/tt_design.css">
+    
 <title>incrits a troctemps</title>
 </head>
 <body>
@@ -40,11 +43,15 @@
     </tr>
       <tr align="center">
       <td>telephone a mettre sous la forme "00.00.00.00.00"</td>
-      <td><input type="tel" name="telephone"></td>
-    </tr> 
+      <td><input type="text" name="telephone"></td>
+    </tr>
     <tr align="center">
       <td>description</td>
       <td><input type="text" name="description"></td>
+    </tr>
+       <tr align="center">
+      <td>mot de pass</td>
+      <td><input type="password" name="pass" ></td>
     </tr>
 	<tr align="center">
       <td colspan="2"><input type="submit" value="inserer"></td>
