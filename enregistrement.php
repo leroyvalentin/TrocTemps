@@ -12,7 +12,7 @@
 
 <body>
 <?php
-	 
+
 include ('inclusion.php');
  
   // //récupération des valeurs des champs:
@@ -43,6 +43,8 @@ $l_base=tt_connectionbase();
 
  
  tt_insert($nom,$prenom,$profession,$sexe,$nom_ville,$cp,$rue,$add_mail,$telephone,$description,$pass,$l_base);
+ 	 header('location: index.php');
+exit;
 ?>
 
    

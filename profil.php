@@ -12,7 +12,7 @@ include("menu.php")
 <body>
 
 
-
+<center>
 <?php
 tt_connectionbase();
   $num_inscrit  = $_GET["num_inscrit"] ;
@@ -27,11 +27,11 @@ $req = mysql_query($sql) or die('Erreur SQL !<br />'.$sql.'<br />'.mysql_error()
 // on va scanner tous les tuples un par un
 while ($data = mysql_fetch_array($req)) {
   // on affiche les résultats
-  echo''.'</br>'.'<br/>'.'<br/>'.'<br/>';
-  echo 'Nom:  '.$data['nom'].'<br/>'.'</br>';
-  echo 'Prenom: '.$data['prenom'].'<br />'.'</br>'.'</br>';
-   echo 'Sexe:  '.$data['sexe'].'<br/>'.'</br>';
-  echo 'Profession: '.$data['profession'].'<br />';
+  echo''.'</br>'.'<br/>'.'<br/>';
+  echo 'Nom:  '.$data['nom'].'<br/>';
+  echo 'Prenom: '.$data['prenom'].'<br/>';
+   echo 'Sexe:  '.$data['sexe'].'<br/>';
+  echo 'Profession: '.$data['profession'].'<br/>';
    echo 'addresse:  '.$data['rue'].'';
   echo ' '.$data['nom_ville'].'';
    echo '  '.$data['cp'].'<br/>';
@@ -43,5 +43,6 @@ mysql_free_result ($req);
 mysql_close ();
 
 ?>
+</center>
 </body>
 </html>

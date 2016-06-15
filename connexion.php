@@ -1,6 +1,17 @@
+<html>
+
+   <head>
+<?php include('include_head.php') ?>
+   <body>
+      
 <?php
-session_start();
-header( 'content-type: text/html; charset=utf-8' );
+session_start(); ?>
+ <ul class="nav">
+    <li class="nav-item">
+        <a href="index.php"> <span class="glyphicon glyphicon-home"></span></a>
+    </li>
+</ul>
+<?php
 include ('inclusion.php');
 $l_base=tt_connectionbase();
 // On met les variables utilisés du script PHP à FALSE.
@@ -75,7 +86,7 @@ if(isset($_GET["connexion"])){
   header('Location:acceuil_troctemps.php');
   
    
-   echo "Bienvenue ".$_SESSION["email"]."";
+
    
 }
   
@@ -84,3 +95,7 @@ if(isset($_GET["connexion"])){
 <?php if($error == TRUE){ echo ".$errorMSG."; } ?>
 
 <?php if($connexionOK == TRUE){ echo ".$connexionMSG."; } ?>
+
+
+</body>
+</html>

@@ -1,12 +1,18 @@
 <html>
 <head>
-  
- 
-     <link rel="stylesheet" type="text/css" href="http://localhost/TrocTemps/tt_design.css">
+
+   <link rel="stylesheet" type="text/css" href="tt_design.css">
     
 <title>incrits a troctemps</title>
 </head>
 <body>
+<ul class="nav">
+ 
+    <li class="nav-item">
+        <a href="index.php"> <span class="  glyphicon glyphicon-home"></span></a>
+    </li>
+</ul>
+
 <form name="prenom" action="enregistrement.php" method="POST">
   <table border="0" align="center" cellspacing="2" cellpadding="2">
     <tr align="center">

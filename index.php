@@ -1,21 +1,16 @@
+<!DOCTYPE html>
 <html>
 
    <head>
-      
-     <link rel="stylesheet" type="text/css" href="http://localhost/TrocTemps/tt_design.css">
-
-
-    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
-
-      <meta http-equiv="Content-Type" content="text/html" charset="iso-8859-1">
-   </head>
+    <?php include('include_head.php') ?>
+ </head>
    
    <body>
-      
+        
       <h2>Connexion au site</h2>
-   
+     <div class="container-fluid">
       <form action="connexion.php" method="GET">
-         
+       
          <table>
             
             <tr>
@@ -33,11 +28,11 @@
             </tr>
             
          </table>
-         
-         <input type="submit" name="connexion" value="Se connecter"/>
-      
+              <input class="btn btn-block btn-primary" type="submit" name="connexion" value="Se connecter"/>
+       <a href="inscription.php">  <input class="btn btn-block" type= button value="inscription"/></a>
+        
       </form>
-   
+ </div>
    </body>
    
 </html>
