@@ -1,17 +1,16 @@
+<!DOCTYPE html>
 <html>
 
   <head>
     <title>acceuil </title>
+<?php include ('include_head.php') ?>
 
-  	<?php
-  	
-  require('controlle_connection.php');
-include("menu.php")
-    ?>
 </head>
 
 <body>
-
+	  	<?php require('controlle_connection.php');?>
+<?php include("menu.php") ?>
   
-	<h1>TROCTEMPS<h1>
+	<h1>TROCTEMPS</h1>
 </body>
+</html>
