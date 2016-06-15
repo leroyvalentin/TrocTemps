@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<?php include("include_head.php") ?>
+<title>liste des profil modifiable </title>
+</head>
+<body>
+  <?php
+ require('controlle_connection.php');
+include("menu.php"); ?>
+
 <?php
   //connection au serveur
   
@@ -43,7 +54,7 @@ $add_mail    = $_GET["add_mail"] ;
     description='$description',
        pass ='$pass'
   WHERE num_inscrit = ".$num_inscrit ;
-  print($sql);
+ // print($sql);
  
   //exécution de la requête SQL:
   $requete = mysql_query($sql, $l_base) or die( mysql_error() ) ;
