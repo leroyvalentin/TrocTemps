@@ -30,10 +30,11 @@ include("menu.php");
        echo(
            "<div align=\"center\">"
            .$result->nom." ".$result->prenom
-           ." ".$result->nom_ville." <a href=\"formulaire_modification.php?num_inscrit=".$result->$num_inscrit."\">modifier</a> 
-           <a href=\"profil.php?num_inscrit=".$result->$num_inscrit."\">profil</a></div>\n"
+           ." ".$result->nom_ville
+          ." <a href=\"profil.php?num_inscrit=".$result->$num_inscrit."\">profil</a></div>\n"
        ) ;
     }
+
   
   ?>
   </body>
