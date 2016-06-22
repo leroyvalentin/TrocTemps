@@ -1,18 +1,13 @@
-<?php
-    include("inclusion.php");
-      
-include("menu.php")
-    
-  ?>
+<!DOCTYPE html>
 <html>
 <head>
- <link rel="stylesheet" type="text/css" href="http://localhost/TrocTemps/tt_design.css">
-<title>incrits a troctemps</title>
+<?php include("include_head.php");?>
 </head>
 <body>
+<?php 
+include("inclusion.php");
+include("menu.php");
 
-
-<?php
 tt_connectionbase();
   $num_inscrit  = $_GET["num_inscrit"] ;
 // lancement de la requete
