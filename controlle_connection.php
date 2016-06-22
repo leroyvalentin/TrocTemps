@@ -1,5 +1,5 @@
 <?php
-session_start(); // ici on continue la session
+include("inclusion.php");
 if( !( isset($_SESSION["email"]) AND !empty($_SESSION["email"]) ))
    {
     // La variable $_SESSION['email'] n'existe pas, ou bien elle est vide

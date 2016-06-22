@@ -15,7 +15,6 @@ include("menu.php"); ?>
 
     
  include ('inclusion.php');
-session_start();
  $l_base=tt_connectionbase();
 
   

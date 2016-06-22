@@ -51,7 +51,6 @@ if(isset($_GET["connexion"])){
             // Si le mot de passe entré à la même valeur que celui de la base de données, on l'autorise a se connecter...         
             if($_GET["pass"] == $donnees["pass"]){
 
-            session_start();
             
                $connexionOK = TRUE;
                
