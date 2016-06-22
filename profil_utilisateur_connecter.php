@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,8 +14,27 @@ include("menu.php");
 
  include ('inclusion.php');
  $l_base=tt_connectionbase();
+ $_SESSION["email"];
 
-?>
 
-</body>
+    //requête SQL:
+    $sql = "SELECT num_inscrit, nom, prenom,nom_ville FROM  inscrit where add_mail='" . $_SESSION["email"] . "' ";
+ 
+    //exécution de la requête:
+    $requete = mysql_query( $sql, $l_base ) ;
+ 
+    //affichage des données:
+    while( $result = mysql_fetch_object( $requete ) )
+    {
+       echo(
+           "<div align=\"center\">"
+           .$result->nom." ".$result->prenom
+           ." ".$result->nom_ville
+          ." </div>\n"
+       ) ;
+    }
+echo"<a href=\"formulaire_modification.php?add_mail=". $_SESSION["email"]."\">modifier</a>";
+  
+  ?>
+  </body>
 </html>
