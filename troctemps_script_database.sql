@@ -23,11 +23,11 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Structure de la table `inscrit`
+-- Structure de la table `tt_inscrit`
 --
 
-DROP TABLE IF EXISTS `inscrit`;
-CREATE TABLE IF NOT EXISTS `inscrit` (
+DROP TABLE IF EXISTS `tt_inscrit`;
+CREATE TABLE IF NOT EXISTS `tt_inscrit` (
   `num_inscrit` int(100) NOT NULL AUTO_INCREMENT,
   `nom` varchar(30) NOT NULL,
   `prenom` varchar(30) NOT NULL,

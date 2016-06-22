@@ -42,7 +42,7 @@ $add_mail    = $_GET["add_mail"] ;
      
 
   //création de la requête SQL:
-  $sql = "UPDATE inscrit
+  $sql = "UPDATE tt_inscrit
             SET nom         = '$nom', 
             prenom     = '$prenom',
       profession    = '$profession',

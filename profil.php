@@ -17,7 +17,7 @@ tt_connectionbase();
   $num_inscrit  = $_GET["num_inscrit"] ;
 // lancement de la requete
  $sql = "SELECT *
-            FROM inscrit
+            FROM tt_inscrit
       WHERE num_inscrit = ".$num_inscrit ;
 
 // on lance la requête (mysql_query) et on impose un message d'erreur si la requête ne se passe pas bien (or die)

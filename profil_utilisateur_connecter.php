@@ -18,7 +18,7 @@ include("menu.php");
 
 
     //requête SQL:
-    $sql = "SELECT num_inscrit, nom, prenom,nom_ville FROM  inscrit where add_mail='" . $_SESSION["email"] . "' ";
+    $sql = "SELECT num_inscrit, nom, prenom,nom_ville FROM  tt_inscrit where add_mail='" . $_SESSION["email"] . "' ";
  
     //exécution de la requête:
     $requete = mysql_query( $sql, $l_base ) ;

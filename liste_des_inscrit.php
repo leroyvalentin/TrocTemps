@@ -18,7 +18,7 @@ include("menu.php");
  $num_inscrit='num_inscrit';
     //requête SQL:
     $sql = "SELECT num_inscrit, nom, prenom,nom_ville
-        FROM  inscrit
+        FROM  tt_inscrit
         ORDER BY nom" ;
  
     //exécution de la requête:

@@ -34,7 +34,7 @@ if(isset($_GET["connexion"])){
    // Sinon si tout les champs sont remplis alors on regarde si le nom de compte rentré existe bien dans la base de données.
    else{
       
-      $sql = "SELECT * FROM inscrit WHERE add_mail =' ".$_GET["email"]."' ";
+      $sql = "SELECT * FROM tt_inscrit WHERE add_mail =' ".$_GET["email"]."' ";
       
       $req = mysql_query($sql);
       
@@ -42,7 +42,7 @@ if(isset($_GET["connexion"])){
      if($sql){
          
          // On sélectionne toute les données de l'utilisateur dans la base de données.   
-         $sql = "SELECT * FROM inscrit  WHERE pass = '".$_GET["pass"]."' ";
+         $sql = "SELECT * FROM tt_inscrit  WHERE pass = '".$_GET["pass"]."' ";
       
          $req = mysql_query($sql);
          

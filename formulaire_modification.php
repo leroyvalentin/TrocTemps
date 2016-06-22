@@ -19,7 +19,7 @@ include("menu.php"); ?>
   $email  = $_GET["add_mail"] ;
 
   //requête SQL:
-   $sql = "SELECT * FROM  inscrit where add_mail='" .$email. "' ";
+   $sql = "SELECT * FROM  tt_inscrit where add_mail='" .$email. "' ";
  
   //exécution de la requête:
   $requete = mysql_query( $sql, $l_base ) ;

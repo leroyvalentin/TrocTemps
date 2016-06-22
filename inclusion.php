@@ -22,7 +22,7 @@ function tt_connectionbase()
 function tt_insert($nom,$prenom,$profession,$sexe,$nom_ville,$cp,$rue,$add_mail,$telephone,$description,$pass,$base)
 {
     //création de la requête SQL:
-    $sql = "INSERT  INTO inscrit (nom, prenom,profession,sexe,nom_ville,cp,rue,add_mail,telephone,pass,description)
+    $sql = "INSERT  INTO tt_inscrit (nom, prenom,profession,sexe,nom_ville,cp,rue,add_mail,telephone,pass,description)
             VALUES ( '$nom', '$prenom','$profession','$sexe','$nom_ville','$cp','$rue','$add_mail','$telephone','$pass','$description') " ;
 
     //exécution de la requête SQL:
