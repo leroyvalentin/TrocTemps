@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<?php include("include_head.php") ?>
+<?php include_once("include_head.php") ?>
 <title>liste des profil modifiable </title>
 </head>
 <body>
   <?php
  require('controlle_connection.php');
-include("menu.php"); ?>
+include_once("menu.php"); ?>
 
 <?php
   //connection au serveur
   
 
     
- include ('inclusion.php');
+ include_once ('inclusion.php');
  $l_base=tt_connectionbase();
 
   
@@ -54,7 +54,6 @@ $add_mail    = $_GET["add_mail"] ;
     description='$description',
        pass ='$pass'
  where add_mail='" .$_SESSION["email"]. "' " ;
- print($sql);
  
   //exécution de la requête SQL:
   $requete = mysql_query($sql, $l_base) or die( mysql_error() ) ;

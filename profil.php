@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<?php include("include_head.php");?>
+<?php include_once("include_head.php");?>
 </head>
 <body>
 <?php 
-include("inclusion.php");
-include("menu.php");
+include_once("inclusion.php");
+include_once("menu.php");
 
 tt_connectionbase();
   $num_inscrit  = $_GET["num_inscrit"] ;

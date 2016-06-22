@@ -1,7 +1,6 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> <html>
 <head>
-<?php include('include_head.php') ?>
+<?php include_once('include_head.php') ?>
 <title>liste des profil modifiable </title>
 </head>
 <body>
@@ -9,9 +8,9 @@
        
 
   require('controlle_connection.php');
-include("menu.php");
+include_once("menu.php");
 
- include ('inclusion.php');
+ include_once ('inclusion.php');
  $l_base=tt_connectionbase();
 
 

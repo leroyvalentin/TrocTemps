@@ -2,7 +2,7 @@
 <html>
 <head>
 
-<?php include("include_head.php") ?>
+<?php include_once("include_head.php") ?>
 
 <title>incrits a troctemps</title>
 </head>

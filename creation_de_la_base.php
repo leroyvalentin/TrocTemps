@@ -2,7 +2,7 @@
 <html>
 
    <head>
-    <?php include('include_head.php') ?>
+    <?php include_once('include_head.php') ?>
  </head>
    
    <body>
@@ -12,7 +12,7 @@
     </li>
 </ul>
       <?php
-      include ('inclusion.php');
+      include_once ('inclusion.php');
  $l_base=tt_connectionbase();
  
 $requetes="";

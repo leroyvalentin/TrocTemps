@@ -1,5 +1,5 @@
 <?php
-include("inclusion.php");
+include_once("inclusion.php");
 if( !( isset($_SESSION["email"]) AND !empty($_SESSION["email"]) ))
    {
     // La variable $_SESSION['email'] n'existe pas, ou bien elle est vide

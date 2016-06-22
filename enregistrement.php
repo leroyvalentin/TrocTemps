@@ -13,7 +13,7 @@
 <body>
 <?php
 
-include ('inclusion.php');
+include_once ('inclusion.php');
  
   // //récupération des valeurs des champs:
   

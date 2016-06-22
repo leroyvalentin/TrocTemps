@@ -6,7 +6,7 @@
 </head>
 <body>
  <?php
- include ('inclusion.php');
+ include_once ('inclusion.php');
  $l_base=tt_connectionbase();
 
 
