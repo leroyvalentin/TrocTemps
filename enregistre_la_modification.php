@@ -15,6 +15,7 @@ include("menu.php"); ?>
 
     
  include ('inclusion.php');
+session_start();
  $l_base=tt_connectionbase();
 
   
@@ -53,8 +54,8 @@ $add_mail    = $_GET["add_mail"] ;
       telephone='$telephone',
     description='$description',
        pass ='$pass'
- where add_mail='" .$add_mail. "' " ;
- // print($sql);
+ where add_mail='" .$_SESSION["email"]. "' " ;
+ print($sql);
  
   //exécution de la requête SQL:
   $requete = mysql_query($sql, $l_base) or die( mysql_error() ) ;
@@ -64,6 +65,7 @@ $add_mail    = $_GET["add_mail"] ;
   if($requete)
   {
     echo("La modification à été correctement effectuée") ;
+    $_SESSION["email"]=$add_mail;
   }
   else
   {
