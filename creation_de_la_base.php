@@ -17,7 +17,7 @@
  
 $requetes="";
  
-$sql=file("troctemps script database.sql"); // on charge le fichier SQL
+$sql=file("troctemps_script_database.sql"); // on charge le fichier SQL
 foreach($sql as $l){ // on le lit
   if (substr(trim($l),0,2)!="--"){ // suppression des commentaires
     $requetes .= $l;
