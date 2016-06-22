@@ -8,7 +8,7 @@
 </head>
 
 <body>
-	  	<?php require('controlle_connection.php');?>
+<?php require('controlle_connection.php');?>
 <?php include("menu.php") ?>
   
 	<h1>TROCTEMPS</h1>
