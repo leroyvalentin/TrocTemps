@@ -1,7 +1,16 @@
     @import url('http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css');
-  body{  background-image:-moz-linear-gradient(right, purple,chocolate 70% ); font-family: 
-    Ubuntu; font-size : 20px; color: black;
-        margin: 10px; }
+  body{    font-family: New Century Schoolbook , serif; font-size : 20px; color: black;
+        margin: 30px; }
+
+h1{
+      text-align: center;
+}
+
+input{
+
+  white-space: normal
+
+}
     /* Supprime les styles appliqués par défaut aux listes. S'applique également à la sous-liste */
     /* Supprime les styles appliqués par défaut aux listes. S'applique également à la sous-liste */
     .nav {
@@ -16,7 +25,7 @@
         display: block;
         padding:.5em;
         color: blue;
-        background: chocolate;
+        background: white;
         text-decoration: none;
     }
     .nav a:focus,
@@ -56,3 +65,9 @@
 
         
        
+.error {
+color: red;
+position:  absolute;
+top: 0;
+left: 0;
+}

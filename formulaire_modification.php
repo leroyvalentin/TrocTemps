@@ -6,22 +6,20 @@
 </head>
 <body>
   <?php
- require('controlle_connection.php');
 include("menu.php"); ?>
 
 <?php
  include ('inclusion.php');
  $l_base=tt_connectionbase();
-
+ require('controlle_connection.php');
+ 
  
   //récupération de la variable d'URL,
   //qui va nous permettre de savoir quel enregistrement modifier
-  $num_inscrit  = $_GET["num_inscrit"] ;
+  $email  = $_GET["add_mail"] ;
 
   //requête SQL:
-  $sql = "SELECT *
-            FROM inscrit
-      WHERE num_inscrit = ".$num_inscrit ;
+   $sql = "SELECT * FROM  inscrit where add_mail='" .$email. "' ";
  
   //exécution de la requête:
   $requete = mysql_query( $sql, $l_base ) ;
@@ -31,7 +29,7 @@ include("menu.php"); ?>
   {
   ?>
 <form name="enregistrement" action="enregistre_la_modification.php" method="get">
-  <input type="hidden" name="num_inscrit" value="<?php echo($num_inscrit) ;?>">
+  <input type="hidden" name="email" value="<?php echo($email) ;?>">
   <table border="0" align="center" cellspacing="2" cellpadding="2">
    <tr align="center">
       <td>nom</td>

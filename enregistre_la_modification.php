@@ -39,7 +39,7 @@ $add_mail    = $_GET["add_mail"] ;
 
  $pass =$_GET["pass"];
 
-   $num_inscrit  = $_GET["num_inscrit"] ;
+     
 
   //création de la requête SQL:
   $sql = "UPDATE inscrit
@@ -53,7 +53,7 @@ $add_mail    = $_GET["add_mail"] ;
       telephone='$telephone',
     description='$description',
        pass ='$pass'
-  WHERE num_inscrit = ".$num_inscrit ;
+ where add_mail='" .$add_mail. "' " ;
  // print($sql);
  
   //exécution de la requête SQL:

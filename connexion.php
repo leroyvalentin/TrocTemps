@@ -60,8 +60,8 @@ if(isset($_GET["connexion"])){
                $connexionOK = TRUE;
                
                $connexionMSG = " Vous êtes désormais connecté ";
-               
-               $_SESSION["email"] = $_GET["email"];
+
+              $_SESSION["email"] = $_GET["email"];
                
                $_SESSION["pass"] = $_GET["pass"];
             

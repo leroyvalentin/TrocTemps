@@ -13,7 +13,7 @@ include("menu.php");
 
  include ('inclusion.php');
  $l_base=tt_connectionbase();
-print_r($_SESSION);
+
 
  $num_inscrit='num_inscrit';
     //requête SQL:

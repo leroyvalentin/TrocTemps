@@ -12,7 +12,6 @@ include("menu.php")
 <body>
 
 
-<center>
 <?php
 tt_connectionbase();
   $num_inscrit  = $_GET["num_inscrit"] ;
@@ -23,8 +22,9 @@ tt_connectionbase();
 
 // on lance la requête (mysql_query) et on impose un message d'erreur si la requête ne se passe pas bien (or die)
 $req = mysql_query($sql) or die('Erreur SQL !<br />'.$sql.'<br />'.mysql_error());
-
-// on va scanner tous les tuples un par un
+?>
+<center>
+<?php
 while ($data = mysql_fetch_array($req)) {
   // on affiche les résultats
   echo''.'</br>'.'<br/>'.'<br/>';
@@ -41,8 +41,8 @@ while ($data = mysql_fetch_array($req)) {
 }
 mysql_free_result ($req);
 mysql_close ();
-
 ?>
+<div/>
 </center>
 </body>
 </html>
