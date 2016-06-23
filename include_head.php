@@ -2,3 +2,4 @@
 <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
 <link rel="stylesheet" type="text/css" href="tt_design.css"/>
+<img src="logosapie.png" class="img-responsive" alt="Responsive image">

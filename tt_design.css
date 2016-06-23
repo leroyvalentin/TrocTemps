@@ -1,5 +1,6 @@
     @import url('http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css');
-  body{    font-family: New Century Schoolbook , serif; font-size : 20px; color: black;
+  body{   
+font-size : 20px; color: black;
         margin: 30px; }
 
 h1{
@@ -16,8 +17,8 @@ input{
     .nav {
         list-style: none none;
         margin: 0;
-        padding: 0;
-        line-height: 1;
+        padding: 5;
+        line-height: 4;
     }
 
 
