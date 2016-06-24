@@ -8,9 +8,10 @@
 </head>
 
 <body>
+	<h1>TROCTEMPS</h1>
 <?php require('controlle_connection.php');?>
 <?php include_once("menu.php") ?>
   
-	<h1>TROCTEMPS</h1>
+	
 </body>
 </html>

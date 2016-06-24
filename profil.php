@@ -27,7 +27,7 @@ while ($data = mysql_fetch_array($req)) {
   echo 'Prenom: '.$data['prenom'].'<br/>';
    echo 'Sexe:  '.$data['sexe'].'<br/>';
   echo 'Profession: '.$data['profession'].'<br/>';
-   echo 'addresse:  '.$data['rue'].'';
+   echo 'adresse:  '.$data['rue'].'';
   echo ' '.$data['nom_ville'].'';
    echo '  '.$data['cp'].'<br/>';
   echo 'E-mail: '.$data['add_mail'].'<br />';

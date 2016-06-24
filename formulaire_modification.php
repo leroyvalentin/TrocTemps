@@ -52,7 +52,7 @@ include_once("menu.php"); ?>
       <td><input type="text" name="rue" value="<?php echo($result->rue) ;?>"></td>
     </tr>
     <tr align="center">
-      <td>addresse mail</td>
+      <td>e-mail</td>
       <td><input type="email" name="add_mail" value="<?php echo($result->add_mail) ;?>"></td>
     </tr>
     <tr align="center">

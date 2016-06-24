@@ -30,7 +30,7 @@ include_once("menu.php");
            "<div align=\"center\">"
            .$result->nom." ".$result->prenom
            ." ".$result->nom_ville
-          ." </div>\n"."<div align=\"center\">"."<a href=\"formulaire_modification.php?add_mail=". $_SESSION["email"]."\">modifier</a>"." </div>\n"
+          ." </div>"."<div align=\"center\">"."<a href=\"formulaire_modification.php?add_mail=". $_SESSION["email"]."\">modifier</a>"." </div>"
        ) ;
     }
    

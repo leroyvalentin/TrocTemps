@@ -44,7 +44,7 @@
       <td><input type="text" name="rue"></td>
     </tr>
      <tr align="center">
-      <td>adresse mail</td>
+      <td>e-mail</td>
       <td><input type="email" name="add_mail"></td>
     </tr>
       <tr align="center">
